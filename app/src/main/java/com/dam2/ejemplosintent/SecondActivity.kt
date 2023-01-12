@@ -21,13 +21,18 @@ class SecondActivity : AppCompatActivity() {
 
         nroClientes.text = value.toString()
 
-
+        // Meto un nuevo dato en el intent
         intent.putExtra("saludo", "Hola");
+        // Debug
         Log.d("MENSAJES", "actualizado intent")
-
+        // Configuro el result para que la Main lo tenga disponible
+        // Posibles resultados:
+        //    Activity.RESULT_OK
+        //    Activity.RESULT_CANCELED
         setResult(Activity.RESULT_OK, intent);
+        // Debug
         Log.d("MENSAJES", "actualizado resultado")
-
+        // cierro la activity
         finish()
 
 
