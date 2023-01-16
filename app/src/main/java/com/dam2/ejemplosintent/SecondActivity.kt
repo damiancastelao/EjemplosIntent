@@ -15,14 +15,11 @@ class SecondActivity : AppCompatActivity() {
         val intent = getIntent()
 
         // Recoge el valor de tipo String pasado en el Intent
-        val value = intent.getIntExtra("proveedores",0)
-
-        val nroClientes = findViewById<TextView>(R.id.nroClientes)
-
-        nroClientes.text = value.toString()
+        val nro1 = intent.getIntExtra("nro1",0)
+        val nro2 = intent.getIntExtra("nro2",0)
 
         // Meto un nuevo dato en el intent
-        intent.putExtra("saludo", "Hola");
+        intent.putExtra("suma", nro1 + nro2);
         // Debug
         Log.d("MENSAJES", "actualizado intent")
         // Configuro el result para que la Main lo tenga disponible
