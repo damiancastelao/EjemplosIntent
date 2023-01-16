@@ -17,14 +17,14 @@ class MainActivity : Activity() {
         // El botón para iniciar el teléfono
         val callButton = findViewById<Button>(R.id.call)
         // numero de telefono al que queremos llamar
-        val nro = findViewById<EditText>(R.id.nro)
+        val url = findViewById<EditText>(R.id.url)
 
 
         callButton.setOnClickListener{
             // creamos un intent específico que iniciará el teléfono
-            val intent = Intent(Intent.ACTION_DIAL)
+            val intent = Intent(Intent.ACTION_VIEW)
             // rellenamos el intent con el número
-            intent.data = Uri.parse("tel:" + nro.text)
+            intent.data = Uri.parse(url.text.toString())
             // llamamos a la activity treléfono
             startActivity(intent)
         }

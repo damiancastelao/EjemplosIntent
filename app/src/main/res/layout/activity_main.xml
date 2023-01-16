@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/nro"
+        android:id="@+id/url"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="¿número de teléfono?"
+        android:hint="url"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
-        android:text="CALL"
-        app:layout_constraintBottom_toTopOf="@+id/nro"
+        android:text="Browser"
+        app:layout_constraintBottom_toTopOf="@+id/url"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
